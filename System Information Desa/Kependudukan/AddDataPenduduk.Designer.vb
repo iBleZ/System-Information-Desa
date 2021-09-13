@@ -265,7 +265,7 @@ Partial Class AddDataPenduduk
         'Label5
         '
         Me.Label5.AutoSize = True
-        Me.Label5.Location = New System.Drawing.Point(25, 121)
+        Me.Label5.Location = New System.Drawing.Point(25, 103)
         Me.Label5.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label5.Name = "Label5"
         Me.Label5.Size = New System.Drawing.Size(50, 16)

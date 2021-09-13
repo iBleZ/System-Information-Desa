@@ -58,7 +58,7 @@ Public Class MainMenu
             If OLEDR.HasRows Then
                 RunningtextToolStripLabel.Text = OLEDR.Item("runningtext")
             Else
-                RunningtextToolStripLabel.Text = "     System Information     "
+                RunningtextToolStripLabel.Text = "          System     Information          "
             End If
             conn.Close()
         Catch ex As Exception

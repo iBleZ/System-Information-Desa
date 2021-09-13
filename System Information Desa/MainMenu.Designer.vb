@@ -805,7 +805,6 @@ Partial Class MainMenu
         Me.Name = "MainMenu"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "System Information"
-        Me.WindowState = System.Windows.Forms.FormWindowState.Maximized
         Me.MenuStrip1.ResumeLayout(False)
         Me.MenuStrip1.PerformLayout()
         Me.ToolStrip1.ResumeLayout(False)

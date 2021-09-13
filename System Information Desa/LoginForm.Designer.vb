@@ -30,6 +30,7 @@ Partial Class LoginForm
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Me.components = New System.ComponentModel.Container()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(LoginForm))
         Me.UsernameLabel = New System.Windows.Forms.Label()
         Me.PasswordLabel = New System.Windows.Forms.Label()
@@ -39,7 +40,9 @@ Partial Class LoginForm
         Me.Cancel = New System.Windows.Forms.Button()
         Me.ForgotpasswordLabel = New System.Windows.Forms.LinkLabel()
         Me.LogoPictureBox = New System.Windows.Forms.PictureBox()
+        Me.VisualStyler1 = New SkinSoft.VisualStyler.VisualStyler(Me.components)
         CType(Me.LogoPictureBox, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.VisualStyler1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'UsernameLabel
@@ -114,6 +117,12 @@ Partial Class LoginForm
         Me.LogoPictureBox.TabIndex = 0
         Me.LogoPictureBox.TabStop = False
         '
+        'VisualStyler1
+        '
+        Me.VisualStyler1.HostForm = Me
+        Me.VisualStyler1.License = CType(resources.GetObject("VisualStyler1.License"), SkinSoft.VisualStyler.Licensing.VisualStylerLicense)
+        Me.VisualStyler1.LoadVisualStyle(Nothing, "Concave (Black).vssf")
+        '
         'LoginForm
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -137,10 +146,12 @@ Partial Class LoginForm
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Login"
         CType(Me.LogoPictureBox, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.VisualStyler1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
     End Sub
 
     Friend WithEvents ForgotpasswordLabel As LinkLabel
+    Friend WithEvents VisualStyler1 As SkinSoft.VisualStyler.VisualStyler
 End Class

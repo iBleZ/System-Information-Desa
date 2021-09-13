@@ -68,6 +68,7 @@
     <Reference Include="MySql.Data, Version=6.9.12.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
       <HintPath>..\packages\MySql.Data.6.9.12\lib\net45\MySql.Data.dll</HintPath>
     </Reference>
+    <Reference Include="SkinSoft.VisualStyler, Version=2.4.0.0, Culture=neutral, PublicKeyToken=0fda9f423e1d9830, processorArchitecture=MSIL" />
     <Reference Include="System" />
     <Reference Include="System.Data" />
     <Reference Include="System.Deployment" />
@@ -95,12 +96,6 @@
       <DependentUpon>AddDataPenduduk.vb</DependentUpon>
     </Compile>
     <Compile Include="Kependudukan\AddDataPenduduk.vb">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="Kependudukan\AddDataPendudukListView.Designer.vb">
-      <DependentUpon>AddDataPendudukListView.vb</DependentUpon>
-    </Compile>
-    <Compile Include="Kependudukan\AddDataPendudukListView.vb">
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="Kependudukan\FormKependudukan.Designer.vb">
@@ -221,9 +216,6 @@
   <ItemGroup>
     <EmbeddedResource Include="Kependudukan\AddDataPenduduk.resx">
       <DependentUpon>AddDataPenduduk.vb</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Kependudukan\AddDataPendudukListView.resx">
-      <DependentUpon>AddDataPendudukListView.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Kependudukan\FormKependudukan.resx">
       <DependentUpon>FormKependudukan.vb</DependentUpon>

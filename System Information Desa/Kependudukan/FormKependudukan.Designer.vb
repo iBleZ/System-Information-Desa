@@ -24,16 +24,14 @@ Partial Class FormKependudukan
     Private Sub InitializeComponent()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.TableLayoutPanel1 = New System.Windows.Forms.TableLayoutPanel()
+        Me.KartuKeluarga1 = New System_Information_Desa.KartuKeluarga()
+        Me.AddDataPenduduk1 = New System_Information_Desa.AddDataPenduduk()
         Me.TableLayoutPanel2 = New System.Windows.Forms.TableLayoutPanel()
         Me.InsertButton = New System.Windows.Forms.Button()
         Me.CancelButton1 = New System.Windows.Forms.Button()
         Me.ClearTabelButton = New System.Windows.Forms.Button()
         Me.ButtonClose = New System.Windows.Forms.Button()
         Me.SaveButton1 = New System.Windows.Forms.Button()
-        Me.AddDataPenduduk2 = New System_Information_Desa.AddDataPenduduk()
-        Me.AddDataPenduduk = New System_Information_Desa.AddDataPenduduk()
-        Me.AddDataPendudukListView = New System_Information_Desa.AddDataPendudukListView()
-        Me.KartuKeluarga1 = New System_Information_Desa.KartuKeluarga()
         Me.TableLayoutPanel1.SuspendLayout()
         Me.TableLayoutPanel2.SuspendLayout()
         Me.SuspendLayout()
@@ -52,19 +50,40 @@ Partial Class FormKependudukan
         '
         Me.TableLayoutPanel1.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.TableLayoutPanel1.BackColor = System.Drawing.SystemColors.ActiveCaption
+        Me.TableLayoutPanel1.BackColor = System.Drawing.Color.RoyalBlue
         Me.TableLayoutPanel1.CellBorderStyle = System.Windows.Forms.TableLayoutPanelCellBorderStyle.OutsetPartial
         Me.TableLayoutPanel1.ColumnCount = 2
         Me.TableLayoutPanel1.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 53.49183!))
         Me.TableLayoutPanel1.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 618.0!))
-        Me.TableLayoutPanel1.Controls.Add(Me.AddDataPenduduk2, 0, 0)
         Me.TableLayoutPanel1.Controls.Add(Me.KartuKeluarga1, 1, 0)
+        Me.TableLayoutPanel1.Controls.Add(Me.AddDataPenduduk1, 0, 0)
         Me.TableLayoutPanel1.Location = New System.Drawing.Point(12, 40)
         Me.TableLayoutPanel1.Name = "TableLayoutPanel1"
         Me.TableLayoutPanel1.RowCount = 1
         Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50.0!))
         Me.TableLayoutPanel1.Size = New System.Drawing.Size(1256, 543)
         Me.TableLayoutPanel1.TabIndex = 260
+        '
+        'KartuKeluarga1
+        '
+        Me.KartuKeluarga1.AutoScroll = True
+        Me.KartuKeluarga1.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.KartuKeluarga1.Location = New System.Drawing.Point(639, 7)
+        Me.KartuKeluarga1.Margin = New System.Windows.Forms.Padding(4)
+        Me.KartuKeluarga1.Name = "KartuKeluarga1"
+        Me.KartuKeluarga1.Size = New System.Drawing.Size(610, 529)
+        Me.KartuKeluarga1.TabIndex = 1
+        '
+        'AddDataPenduduk1
+        '
+        Me.AddDataPenduduk1.AutoScroll = True
+        Me.AddDataPenduduk1.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.AddDataPenduduk1.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.AddDataPenduduk1.Location = New System.Drawing.Point(7, 7)
+        Me.AddDataPenduduk1.Margin = New System.Windows.Forms.Padding(4)
+        Me.AddDataPenduduk1.Name = "AddDataPenduduk1"
+        Me.AddDataPenduduk1.Size = New System.Drawing.Size(621, 529)
+        Me.AddDataPenduduk1.TabIndex = 2
         '
         'TableLayoutPanel2
         '
@@ -77,7 +96,7 @@ Partial Class FormKependudukan
         Me.TableLayoutPanel2.Controls.Add(Me.InsertButton, 0, 0)
         Me.TableLayoutPanel2.Controls.Add(Me.CancelButton1, 2, 0)
         Me.TableLayoutPanel2.Controls.Add(Me.ClearTabelButton, 4, 0)
-        Me.TableLayoutPanel2.Location = New System.Drawing.Point(16, 588)
+        Me.TableLayoutPanel2.Location = New System.Drawing.Point(16, 602)
         Me.TableLayoutPanel2.Name = "TableLayoutPanel2"
         Me.TableLayoutPanel2.RowCount = 1
         Me.TableLayoutPanel2.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100.0!))
@@ -113,7 +132,7 @@ Partial Class FormKependudukan
         '
         'ButtonClose
         '
-        Me.ButtonClose.Location = New System.Drawing.Point(539, 591)
+        Me.ButtonClose.Location = New System.Drawing.Point(539, 605)
         Me.ButtonClose.Name = "ButtonClose"
         Me.ButtonClose.Size = New System.Drawing.Size(75, 25)
         Me.ButtonClose.TabIndex = 262
@@ -122,52 +141,12 @@ Partial Class FormKependudukan
         '
         'SaveButton1
         '
-        Me.SaveButton1.Location = New System.Drawing.Point(1162, 595)
+        Me.SaveButton1.Location = New System.Drawing.Point(1162, 605)
         Me.SaveButton1.Name = "SaveButton1"
         Me.SaveButton1.Size = New System.Drawing.Size(75, 25)
         Me.SaveButton1.TabIndex = 263
         Me.SaveButton1.Text = "Save"
         Me.SaveButton1.UseVisualStyleBackColor = True
-        '
-        'AddDataPenduduk2
-        '
-        Me.AddDataPenduduk2.AutoScroll = True
-        Me.AddDataPenduduk2.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.AddDataPenduduk2.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.AddDataPenduduk2.Location = New System.Drawing.Point(7, 7)
-        Me.AddDataPenduduk2.Margin = New System.Windows.Forms.Padding(4)
-        Me.AddDataPenduduk2.Name = "AddDataPenduduk2"
-        Me.AddDataPenduduk2.Size = New System.Drawing.Size(621, 529)
-        Me.AddDataPenduduk2.TabIndex = 0
-        '
-        'AddDataPenduduk
-        '
-        Me.AddDataPenduduk.AutoScroll = True
-        Me.AddDataPenduduk.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.AddDataPenduduk.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.AddDataPenduduk.Location = New System.Drawing.Point(4, 4)
-        Me.AddDataPenduduk.Margin = New System.Windows.Forms.Padding(4)
-        Me.AddDataPenduduk.Name = "AddDataPenduduk"
-        Me.AddDataPenduduk.Size = New System.Drawing.Size(663, 535)
-        Me.AddDataPenduduk.TabIndex = 0
-        '
-        'AddDataPendudukListView
-        '
-        Me.AddDataPendudukListView.AutoScroll = True
-        Me.AddDataPendudukListView.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.AddDataPendudukListView.Location = New System.Drawing.Point(674, 3)
-        Me.AddDataPendudukListView.Name = "AddDataPendudukListView"
-        Me.AddDataPendudukListView.Size = New System.Drawing.Size(579, 537)
-        Me.AddDataPendudukListView.TabIndex = 1
-        '
-        'KartuKeluarga1
-        '
-        Me.KartuKeluarga1.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.KartuKeluarga1.Location = New System.Drawing.Point(639, 7)
-        Me.KartuKeluarga1.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
-        Me.KartuKeluarga1.Name = "KartuKeluarga1"
-        Me.KartuKeluarga1.Size = New System.Drawing.Size(610, 529)
-        Me.KartuKeluarga1.TabIndex = 1
         '
         'FormKependudukan
         '
@@ -197,16 +176,12 @@ Partial Class FormKependudukan
     End Sub
     Friend WithEvents Label2 As Label
     Friend WithEvents TableLayoutPanel1 As TableLayoutPanel
-    Friend WithEvents AddDataPenduduk1 As AddDataPenduduk
-    Friend WithEvents AddDataPendudukListView1 As AddDataPendudukListView
     Friend WithEvents TableLayoutPanel2 As TableLayoutPanel
     Friend WithEvents InsertButton As Button
     Friend WithEvents CancelButton1 As Button
     Friend WithEvents ClearTabelButton As Button
     Friend WithEvents ButtonClose As Button
-    Friend WithEvents AddDataPenduduk As AddDataPenduduk
-    Friend WithEvents AddDataPendudukListView As AddDataPendudukListView
-    Friend WithEvents AddDataPenduduk2 As AddDataPenduduk
     Friend WithEvents SaveButton1 As Button
     Friend WithEvents KartuKeluarga1 As KartuKeluarga
+    Friend WithEvents AddDataPenduduk1 As AddDataPenduduk
 End Class
