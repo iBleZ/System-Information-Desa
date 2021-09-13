@@ -1,0 +1,305 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{FDA4F4B9-816B-488F-A08F-9494119A82FD}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>System_Information_Desa.My.MyApplication</StartupObject>
+    <RootNamespace>System_Information_Desa</RootNamespace>
+    <AssemblyName>System Information Desa</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <Deterministic>true</Deterministic>
+    <TargetFrameworkProfile />
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>System Information Desa.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>System Information Desa.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="MySql.Data, Version=6.9.12.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
+      <HintPath>..\packages\MySql.Data.6.9.12\lib\net45\MySql.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Kependudukan\AddDataPenduduk.Designer.vb">
+      <DependentUpon>AddDataPenduduk.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Kependudukan\AddDataPenduduk.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Kependudukan\AddDataPendudukListView.Designer.vb">
+      <DependentUpon>AddDataPendudukListView.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Kependudukan\AddDataPendudukListView.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Kependudukan\FormKependudukan.Designer.vb">
+      <DependentUpon>FormKependudukan.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Kependudukan\FormKependudukan.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Kependudukan\KartuKeluarga.Designer.vb">
+      <DependentUpon>KartuKeluarga.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Kependudukan\KartuKeluarga.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="LoginForm.Designer.vb">
+      <DependentUpon>LoginForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="LoginForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LupaPasswordForm.Designer.vb">
+      <DependentUpon>LupaPasswordForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="LupaPasswordForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainMenu.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainMenu.Designer.vb">
+      <DependentUpon>MainMenu.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="My Project\Module1.vb" />
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="User Menu\AddUserForm.Designer.vb">
+      <DependentUpon>AddUserForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="User Menu\AddUserForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="User Menu\EditUserForm.Designer.vb">
+      <DependentUpon>EditUserForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="User Menu\EditUserForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="User Menu\FormChangePassword.Designer.vb">
+      <DependentUpon>FormChangePassword.vb</DependentUpon>
+    </Compile>
+    <Compile Include="User Menu\FormChangePassword.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="User Menu\FormChangePersonalInfo.Designer.vb">
+      <DependentUpon>FormChangePersonalInfo.vb</DependentUpon>
+    </Compile>
+    <Compile Include="User Menu\FormChangePersonalInfo.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="User Menu\FormChangePhoto.Designer.vb">
+      <DependentUpon>FormChangePhoto.vb</DependentUpon>
+    </Compile>
+    <Compile Include="User Menu\FormChangePhoto.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="User Menu\UserDataForm.Designer.vb">
+      <DependentUpon>UserDataForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="User Menu\UserDataForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="User Menu\UserInformationForm.Designer.vb">
+      <DependentUpon>UserInformationForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="User Menu\UserInformationForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Utility\KopSuratForm.Designer.vb">
+      <DependentUpon>KopSuratForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Utility\KopSuratForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Utility\LogoForm.Designer.vb">
+      <DependentUpon>LogoForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Utility\LogoForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Utility\PejabatDesaForm.Designer.vb">
+      <DependentUpon>PejabatDesaForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Utility\PejabatDesaForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Utility\TextRunningmainmenuForm.Designer.vb">
+      <DependentUpon>TextRunningmainmenuForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Utility\TextRunningmainmenuForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Kependudukan\AddDataPenduduk.resx">
+      <DependentUpon>AddDataPenduduk.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Kependudukan\AddDataPendudukListView.resx">
+      <DependentUpon>AddDataPendudukListView.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Kependudukan\FormKependudukan.resx">
+      <DependentUpon>FormKependudukan.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Kependudukan\KartuKeluarga.resx">
+      <DependentUpon>KartuKeluarga.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LoginForm.resx">
+      <DependentUpon>LoginForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LupaPasswordForm.resx">
+      <DependentUpon>LupaPasswordForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainMenu.resx">
+      <DependentUpon>MainMenu.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="User Menu\AddUserForm.resx">
+      <DependentUpon>AddUserForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="User Menu\EditUserForm.resx">
+      <DependentUpon>EditUserForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="User Menu\FormChangePassword.resx">
+      <DependentUpon>FormChangePassword.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="User Menu\FormChangePersonalInfo.resx">
+      <DependentUpon>FormChangePersonalInfo.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="User Menu\FormChangePhoto.resx">
+      <DependentUpon>FormChangePhoto.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="User Menu\UserDataForm.resx">
+      <DependentUpon>UserDataForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="User Menu\UserInformationForm.resx">
+      <DependentUpon>UserInformationForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Utility\KopSuratForm.resx">
+      <DependentUpon>KopSuratForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Utility\LogoForm.resx">
+      <DependentUpon>LogoForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Utility\PejabatDesaForm.resx">
+      <DependentUpon>PejabatDesaForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Utility\TextRunningmainmenuForm.resx">
+      <DependentUpon>TextRunningmainmenuForm.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\DataSources\AddDataPendudukListView.datasource" />
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+</Project>
