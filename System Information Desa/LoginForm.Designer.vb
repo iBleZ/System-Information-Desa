@@ -121,7 +121,7 @@ Partial Class LoginForm
         '
         Me.VisualStyler1.HostForm = Me
         Me.VisualStyler1.License = CType(resources.GetObject("VisualStyler1.License"), SkinSoft.VisualStyler.Licensing.VisualStylerLicense)
-        Me.VisualStyler1.LoadVisualStyle(Nothing, "Concave (Black).vssf")
+        Me.VisualStyler1.LoadVisualStyle(Nothing, "CarbonPro3 (DarkBlue).vssf")
         '
         'LoginForm
         '

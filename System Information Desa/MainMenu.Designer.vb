@@ -147,7 +147,7 @@ Partial Class MainMenu
         Me.AdministratorToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.AddUserToolStripMenuItem, Me.EditUserToolStripMenuItem, Me.UserDataToolStripMenuItem, Me.UtilityToolStripMenuItem})
         Me.AdministratorToolStripMenuItem.Image = CType(resources.GetObject("AdministratorToolStripMenuItem.Image"), System.Drawing.Image)
         Me.AdministratorToolStripMenuItem.Name = "AdministratorToolStripMenuItem"
-        Me.AdministratorToolStripMenuItem.Size = New System.Drawing.Size(168, 22)
+        Me.AdministratorToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
         Me.AdministratorToolStripMenuItem.Text = "Administrator"
         '
         'AddUserToolStripMenuItem
@@ -211,7 +211,7 @@ Partial Class MainMenu
         '
         Me.UserInformationToolStripMenuItem.Image = CType(resources.GetObject("UserInformationToolStripMenuItem.Image"), System.Drawing.Image)
         Me.UserInformationToolStripMenuItem.Name = "UserInformationToolStripMenuItem"
-        Me.UserInformationToolStripMenuItem.Size = New System.Drawing.Size(168, 22)
+        Me.UserInformationToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
         Me.UserInformationToolStripMenuItem.Text = "User Information"
         '
         'KependudukanToolStripMenuItem
@@ -219,28 +219,28 @@ Partial Class MainMenu
         Me.KependudukanToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.AddDataToolStripMenuItem, Me.EditDataToolStripMenuItem, Me.DataWargaDesaToolStripMenuItem})
         Me.KependudukanToolStripMenuItem.Image = CType(resources.GetObject("KependudukanToolStripMenuItem.Image"), System.Drawing.Image)
         Me.KependudukanToolStripMenuItem.Name = "KependudukanToolStripMenuItem"
-        Me.KependudukanToolStripMenuItem.Size = New System.Drawing.Size(168, 22)
+        Me.KependudukanToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
         Me.KependudukanToolStripMenuItem.Text = "Kependudukan"
         '
         'AddDataToolStripMenuItem
         '
         Me.AddDataToolStripMenuItem.Image = CType(resources.GetObject("AddDataToolStripMenuItem.Image"), System.Drawing.Image)
         Me.AddDataToolStripMenuItem.Name = "AddDataToolStripMenuItem"
-        Me.AddDataToolStripMenuItem.Size = New System.Drawing.Size(163, 22)
+        Me.AddDataToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
         Me.AddDataToolStripMenuItem.Text = "Add Data"
         '
         'EditDataToolStripMenuItem
         '
         Me.EditDataToolStripMenuItem.Image = CType(resources.GetObject("EditDataToolStripMenuItem.Image"), System.Drawing.Image)
         Me.EditDataToolStripMenuItem.Name = "EditDataToolStripMenuItem"
-        Me.EditDataToolStripMenuItem.Size = New System.Drawing.Size(163, 22)
+        Me.EditDataToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
         Me.EditDataToolStripMenuItem.Text = "Edit Data"
         '
         'DataWargaDesaToolStripMenuItem
         '
         Me.DataWargaDesaToolStripMenuItem.Image = CType(resources.GetObject("DataWargaDesaToolStripMenuItem.Image"), System.Drawing.Image)
         Me.DataWargaDesaToolStripMenuItem.Name = "DataWargaDesaToolStripMenuItem"
-        Me.DataWargaDesaToolStripMenuItem.Size = New System.Drawing.Size(163, 22)
+        Me.DataWargaDesaToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
         Me.DataWargaDesaToolStripMenuItem.Text = "Data Warga Desa"
         '
         'TransaksiSuratToolStripMenuItem
@@ -248,7 +248,7 @@ Partial Class MainMenu
         Me.TransaksiSuratToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.SuratMasukToolStripMenuItem, Me.SuratKeluarToolStripMenuItem, Me.AgendaToolStripMenuItem})
         Me.TransaksiSuratToolStripMenuItem.Image = CType(resources.GetObject("TransaksiSuratToolStripMenuItem.Image"), System.Drawing.Image)
         Me.TransaksiSuratToolStripMenuItem.Name = "TransaksiSuratToolStripMenuItem"
-        Me.TransaksiSuratToolStripMenuItem.Size = New System.Drawing.Size(168, 22)
+        Me.TransaksiSuratToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
         Me.TransaksiSuratToolStripMenuItem.Text = "Transaksi Surat"
         '
         'SuratMasukToolStripMenuItem
@@ -276,21 +276,21 @@ Partial Class MainMenu
         '
         Me.ArsipLaporanToolStripMenuItem.Image = CType(resources.GetObject("ArsipLaporanToolStripMenuItem.Image"), System.Drawing.Image)
         Me.ArsipLaporanToolStripMenuItem.Name = "ArsipLaporanToolStripMenuItem"
-        Me.ArsipLaporanToolStripMenuItem.Size = New System.Drawing.Size(168, 22)
+        Me.ArsipLaporanToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
         Me.ArsipLaporanToolStripMenuItem.Text = "Arsip Laporan"
         '
         'DataPotensiDesaToolStripMenuItem
         '
         Me.DataPotensiDesaToolStripMenuItem.Image = CType(resources.GetObject("DataPotensiDesaToolStripMenuItem.Image"), System.Drawing.Image)
         Me.DataPotensiDesaToolStripMenuItem.Name = "DataPotensiDesaToolStripMenuItem"
-        Me.DataPotensiDesaToolStripMenuItem.Size = New System.Drawing.Size(168, 22)
+        Me.DataPotensiDesaToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
         Me.DataPotensiDesaToolStripMenuItem.Text = "Data Potensi Desa"
         '
         'ExitToolStripMenuItem
         '
         Me.ExitToolStripMenuItem.Image = CType(resources.GetObject("ExitToolStripMenuItem.Image"), System.Drawing.Image)
         Me.ExitToolStripMenuItem.Name = "ExitToolStripMenuItem"
-        Me.ExitToolStripMenuItem.Size = New System.Drawing.Size(168, 22)
+        Me.ExitToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
         Me.ExitToolStripMenuItem.Text = "Exit"
         '
         'JenisSuratToolStripMenuItem
@@ -762,8 +762,8 @@ Partial Class MainMenu
         '
         Me.ToolStripStatusLabel2.Margin = New System.Windows.Forms.Padding(2, 3, 0, 2)
         Me.ToolStripStatusLabel2.Name = "ToolStripStatusLabel2"
-        Me.ToolStripStatusLabel2.Size = New System.Drawing.Size(127, 19)
-        Me.ToolStripStatusLabel2.Text = "V2.SqlN4.5.1.2021.VS22"
+        Me.ToolStripStatusLabel2.Size = New System.Drawing.Size(31, 19)
+        Me.ToolStripStatusLabel2.Text = "2.5.1"
         '
         'UserNameToolStripStatusLabel
         '

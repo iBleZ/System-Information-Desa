@@ -75,10 +75,7 @@ Public Class MainMenu
     Private Sub HomeToolStripButton_Click(sender As Object, e As EventArgs) Handles HomeToolStripButton.Click
         For Each fc As Form In MdiChildren
             fc.Close()
-            fc.Hide()
         Next
-        'FormKependudukan.AddPendudukUserControl.Hide()
-        'FormKependudukan.Hide()
     End Sub
 
     Private Sub AddUserToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles AddUserToolStripMenuItem.Click
@@ -153,7 +150,22 @@ Public Class MainMenu
             fc.Close()
         Next
         FormKependudukan.Show()
-
         FormKependudukan.MdiParent = Me
+    End Sub
+
+    Private Sub EditDataToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles EditDataToolStripMenuItem.Click
+        For Each fc As Form In Me.MdiChildren
+            fc.Close()
+        Next
+        EditDataPenduduk.Show()
+        EditDataPenduduk.MdiParent = Me
+    End Sub
+
+    Private Sub DataWargaDesaToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles DataWargaDesaToolStripMenuItem.Click
+        For Each fc As Form In Me.MdiChildren
+            fc.Close()
+        Next
+        FormDatabaseWarga.Show()
+        FormDatabaseWarga.MdiParent = Me
     End Sub
 End Class

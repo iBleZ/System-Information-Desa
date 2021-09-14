@@ -98,10 +98,28 @@
     <Compile Include="Kependudukan\AddDataPenduduk.vb">
       <SubType>UserControl</SubType>
     </Compile>
+    <Compile Include="Kependudukan\EditDataPenduduk.Designer.vb">
+      <DependentUpon>EditDataPenduduk.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Kependudukan\EditDataPenduduk.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Kependudukan\FormDatabaseWarga.Designer.vb">
+      <DependentUpon>FormDatabaseWarga.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Kependudukan\FormDatabaseWarga.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Kependudukan\FormKependudukan.Designer.vb">
       <DependentUpon>FormKependudukan.vb</DependentUpon>
     </Compile>
     <Compile Include="Kependudukan\FormKependudukan.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Menu Kependudukan\FormMenuKependudukan.Designer.vb">
+      <DependentUpon>FormMenuKependudukan.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Menu Kependudukan\FormMenuKependudukan.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Kependudukan\KartuKeluarga.Designer.vb">
@@ -217,6 +235,12 @@
     <EmbeddedResource Include="Kependudukan\AddDataPenduduk.resx">
       <DependentUpon>AddDataPenduduk.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Kependudukan\EditDataPenduduk.resx">
+      <DependentUpon>EditDataPenduduk.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Kependudukan\FormDatabaseWarga.resx">
+      <DependentUpon>FormDatabaseWarga.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Kependudukan\FormKependudukan.resx">
       <DependentUpon>FormKependudukan.vb</DependentUpon>
     </EmbeddedResource>
@@ -278,7 +302,6 @@
       <Generator>MyApplicationCodeGenerator</Generator>
       <LastGenOutput>Application.Designer.vb</LastGenOutput>
     </None>
-    <None Include="My Project\DataSources\AddDataPendudukListView.datasource" />
     <None Include="My Project\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <CustomToolNamespace>My</CustomToolNamespace>
@@ -292,6 +315,9 @@
       <ProductName>.NET Framework 3.5 SP1</ProductName>
       <Install>false</Install>
     </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="My Project\DataSources\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
 </Project>
